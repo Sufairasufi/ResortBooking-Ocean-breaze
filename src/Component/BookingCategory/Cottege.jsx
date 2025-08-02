@@ -40,11 +40,11 @@ const Cottege = () => {
     setGuests('');
   };
 
-  const handleClearBooking = () => {
-    localStorage.removeItem('cottegeBooking');
-    setStoredData(null);
-    alert('Booking data cleared!');
-  };
+  // const handleClearBooking = () => {
+  //   localStorage.removeItem('cottegeBooking');
+  //   setStoredData(null);
+  //   alert('Booking data cleared!');
+  // };
 
   return (
     <section className='booking-section'>
