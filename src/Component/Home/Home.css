@@ -1,0 +1,275 @@
+
+.videoContainer {
+  height: 100vh;
+  width: 97s.7vw;
+  position: relative; 
+  overflow: hidden;
+}
+
+
+video {
+  width: 99.8%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;   
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.home-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999; 
+}
+
+.home-navbar-links {
+  display: flex;
+  list-style: none;
+  gap: 4rem;
+  margin-right: 2rem;
+}
+
+.home-navbar-logo img {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  margin-left: 2rem;
+}
+
+.home-navlink {
+  text-decoration: none;
+  color: rgb(237, 240, 241);
+  font-size: larger;
+}
+
+.home-navlink:hover {
+  text-decoration: underline;
+  color: #00aaff;
+}
+.search-overlay{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 5px #000;
+  z-index: 2;
+}
+.search-overlay h1{
+  font-size: 4rem;
+}
+.search-overlay p{
+  font-size: 2rem;
+
+}
+.search-overlay h1::first-letter {
+  color: #00aaff;
+}
+.search-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #00aaff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1;
+}
+.search-button:hover{
+  background-color: #ffffff;
+  color: #00aaff;
+}
+.home{
+  display: flex;
+  padding: 30px;
+}
+.home-about h2 {
+  color: #00aaff;
+  font-size: 2rem;
+}
+.home-about p {
+  font-size: 1.8rem;
+}
+.animated-image {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 15px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.animated-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+.home-btn{
+  margin: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #00aaff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1;
+}
+.toggle-button-home {
+  display: none;
+  font-size: 37px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 54px;
+  top: 20px;
+  color: white;
+
+}
+/* @media (max-width: 768px) {
+  
+} */
+
+
+@media (max-width: 992px) {
+  .home-navbar-links {
+    gap: 2rem;
+    margin-right: 1rem;
+  }
+
+  .home-navbar-logo img {
+    height: 60px;
+    width: 60px;
+    margin-left: 1rem;
+  }
+
+  .search-overlay h1 {
+    font-size: 3rem;
+  }
+
+  .search-overlay p {
+    font-size: 1.5rem;
+  }
+
+  .home-about p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .home-navbar-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    margin: 0;
+    padding-left: 1rem;
+  }
+
+  .search-overlay h1 {
+    font-size: 2.5rem;
+  }
+
+  .search-overlay p {
+    font-size: 1.2rem;
+  }
+
+  .home {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .animated-image {
+    max-width: 90%;
+  }
+
+  .home-about h2 {
+    font-size: 1.5rem;
+  }
+
+  .home-about p {
+    font-size: 1rem;
+  }
+
+  .search-button {
+    width: 100%;
+    max-width: 250px;
+  }
+  .home-btn {
+    width: 100%;
+    max-width: 250px;
+    margin-left: 233px;
+  }
+
+
+  .toggle-button-home {
+    display: block;
+  }
+
+  .home-navbar-links {
+    display: none;
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    width: 140px;
+    transition: all 0.3s ease;
+    z-index: 999;
+  }
+
+  .home-navbar-links.open {
+    display: flex;
+  }
+
+  .home-navlink {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    color: #007BFF;
+  }
+
+  .home-navlink:last-child {
+    border-bottom: none;
+  }
+
+  .home-navbar-links li {
+    text-align: right;
+  }
+}
+
+@media (max-width: 480px) {
+  .search-overlay h1 {
+    font-size: 2rem;
+  }
+
+  .search-overlay p {
+    font-size: 1rem;
+  }
+
+  .home-navbar-links {
+    gap: 0.5rem;
+  }
+
+  .home-navbar-logo img {
+    height: 50px;
+    width: 50px;
+  }
+}

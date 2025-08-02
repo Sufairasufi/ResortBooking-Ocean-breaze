@@ -1,0 +1,33 @@
+[
+  {
+    "title": "Luxury Accommodation",
+    "description": "Stay in elegantly designed rooms equipped with modern amenities and 24/7 service.",
+    "image": "Images/luxury.jpg"
+  },
+  {
+    "title": "Spa & Wellness",
+    "description": "Relax with Ayurvedic treatments, body massages, and peaceful spa experiences.",
+    "image": "/Images/spa&wellness.jpg"
+  },
+  {
+    "title": "Fine Dining",
+    "description": "Enjoy a variety of delicious cuisines at our multi-cuisine restaurant.",
+    "image": "/Images/finedining.jpg"
+  },
+  {
+    "title": "Sightseeing & Tours",
+    "description": "Explore nearby waterfalls, backwaters, and hill stations with guided tours.",
+    "image": "Images/sightseen.jpg"
+  },
+  {
+    "title": "Adventure Activities",
+    "description": "Participate in boating, trekking, jeep safari, and cycling adventures.",
+    "image": "/Images/adventure.jpg"
+  },
+  {
+    "title": "Event Hosting",
+    "description": "Celebrate weddings, birthdays, and corporate events with us.",
+    "image": "/Images/event.jpg"
+  }
+]
+
